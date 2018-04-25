@@ -1,0 +1,100 @@
+page-minefabu {
+
+    .ferg{
+        height:80px;
+    }
+    .card-title {
+        position: absolute;//滑动时候动。fixed滑动时候不动
+        top: 35%;
+        left:5%;
+        font-size: 22px;;
+        font-weight: bold;
+        color:black;
+      }
+      .card-title img{
+       width: 17px;     
+      }
+      .card-title span{
+        position: relative;//滑动时候动。fixed滑动时候不动
+        top: -8px;
+        left: 120px;
+       }
+       .content-ios {
+       
+        background-color: #f9f9f9;
+    }
+  
+
+    .gg img{
+        width:80px;
+        height:80px;
+        padding-top: 5px;
+     }
+     .aini{
+        
+       margin-left: 90px;
+       margin-top: -70px;
+      width: 116px;
+      margin-bottom: 20px;
+        
+     }
+     .aini2{
+       padding-top: 20px;
+   
+       color: red;
+       font-size: 20px;
+     }
+     
+     .item-ios ion-avatar img {
+         border-radius: 0%;
+     }
+     
+     .item-ios.item-block .item-inner {
+         
+         border-bottom: 0px ;
+     }
+     #img1{
+         width:10px;
+         height:40px;
+     
+     }
+     #hlhl{
+         width:38px;
+         height:28px;
+         position: fixed;
+         left:5px;
+         bottom: 10px;
+     }
+     .hhhhhh{
+         font-size: 18px;
+         padding-left: 7px;
+         position: fixed;
+         left:40px;
+         bottom: 8px;
+         
+     }
+     
+     .hello{
+         background-color: #f3efef;
+        
+         height:23px;
+         margin-top: -20px;
+     }
+     ion-list-header{
+         height:50px;
+     }
+.bor{
+    border-bottom: 1px solid #f0f0f0;
+    width: 500px;
+    margin-left: -20px;
+}
+
+.item-ios ion-avatar[item-left], .item-ios ion-thumbnail[item-left], .item-ios ion-avatar[item-start], .item-ios ion-thumbnail[item-start] {
+    margin: 8px 16px 8px 0;
+    width: 192px;
+}
+
+.list-ios > .item-block{
+    border-bottom: 0.55px solid #f0f0f0;
+}
+}

@@ -1,0 +1,46 @@
+page-fabutype {
+    .ferg{
+        height:80px;
+    }
+    .card-title {
+        position: absolute;//滑动时候动。fixed滑动时候不动
+        top: 35%;
+        left:5%;
+        font-size: 22px;;
+        font-weight: bold;
+        color:black;
+      }
+      .card-title img{
+       width: 17px;     
+      }
+      .card-title span{
+        position: relative;//滑动时候动。fixed滑动时候不动
+        top: -8px;
+        left: 120px;
+       }
+       .content-ios {
+       
+        background-color: #f9f9f9;
+    }
+    .btn{
+        background-color: white;
+        border: 1px solid #e5e5e5;
+        float: left;
+        margin-left: 13px;
+        margin-top: 25px;
+        width: 120px;
+        padding: 15px;
+        height:120px;
+    }
+    p{
+        color:#000;
+        font-size: 17px;
+        // font-weight: bolder;
+        // font-weight: bold;
+        font-weight:800;
+    }
+ .btn>img{
+     width:35px;
+
+ }
+}

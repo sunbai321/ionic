@@ -1,0 +1,299 @@
+<ion-header no-border >
+    <ion-title>
+        
+        <ion-navbar  color='yes' class="ferg"> 
+          <div class="card-title">
+              <img src="assets/imgs/555.png" (click)="tiaozhuan()"><span>找信息</span>  
+          </div>
+        </ion-navbar>
+        <ion-toolbar no-border color='yes'>
+            <input type="search" placeholder="搜索关键字" text-center>
+            <!-- <ion-searchbar>shousuo</ion-searchbar> -->
+        </ion-toolbar>
+     </ion-title>
+      </ion-header>
+
+      <ion-content>
+
+
+          <ion-segment [(ngModel)]="icons">
+
+              <ion-segment-button value="infor" >
+               服务类型
+              </ion-segment-button>
+
+              <ion-segment-button value="service">
+              地区
+              </ion-segment-button>
+
+              <ion-segment-button value="dengji">
+                  服务等级
+               </ion-segment-button>
+
+            </ion-segment>
+          
+            <!-- 切换的内容 -->
+            <div [ngSwitch]="icons"> 
+              <!-- infor必须加引号才是一个字符串，要不加就是变量 -->
+                <ion-list *ngSwitchCase="'infor'" class="yuyu"> 
+                 
+
+                      <ion-item>
+                          <ion-label>资产包收购</ion-label>
+                          <ion-checkbox color=yes checked="true"></ion-checkbox>
+                        </ion-item>
+                        
+                        <ion-item>
+                          <ion-label>催收机构</ion-label>
+                          <ion-checkbox></ion-checkbox>
+                        </ion-item>
+                        
+                      <ion-item>
+                          <ion-label>律师事务所</ion-label>
+                          <ion-checkbox></ion-checkbox>
+                        </ion-item>
+                        
+                        <ion-item>
+                          <ion-label>保理公司</ion-label>
+                          <ion-checkbox></ion-checkbox>
+                        </ion-item>
+                        
+                      <ion-item>
+                          <ion-label>投资贷款</ion-label>
+                          <ion-checkbox></ion-checkbox>
+                        </ion-item>
+                        
+                        <ion-item>
+                          <ion-label>典当担保</ion-label>
+                          <ion-checkbox></ion-checkbox>
+                        </ion-item>
+                        <ion-item>
+                            <ion-label>资金过桥</ion-label>
+                            <ion-checkbox></ion-checkbox>
+                          </ion-item>
+                          
+                          <ion-item>
+                            <ion-label>催收机构</ion-label>
+                            <ion-checkbox></ion-checkbox>
+                          </ion-item>
+                          
+                        <ion-item>
+                            <ion-label>尽职调查</ion-label>
+                            <ion-checkbox></ion-checkbox>
+                          </ion-item>
+                          
+                          <ion-item>
+                            <ion-label>固产收购</ion-label>
+                            <ion-checkbox></ion-checkbox>
+                          </ion-item>
+                      
+            </ion-list>
+
+            <ion-list *ngSwitchCase="'service'"> 
+                    <ion-grid class="kuku">
+
+                  <ion-row class="yuyu">
+                    <ion-col>
+                        <button ion-item>
+                            <ion-label>北京</ion-label>   
+                         </button>
+            
+                    </ion-col>
+                    <ion-col>
+                        <ion-item>
+                            <ion-label>裕华区</ion-label>
+                            <ion-checkbox></ion-checkbox>
+                          </ion-item>
+                      </ion-col>
+                      <ion-col>
+                       
+                        </ion-col>
+                  </ion-row>
+
+                  <ion-row>
+                    <ion-col>
+                        <button ion-item>
+                            <ion-label>上海</ion-label>
+                            
+                         </button>
+            
+                    </ion-col>
+                    <ion-col>
+                        
+                      </ion-col>
+                      <ion-col>
+                        
+                        </ion-col>
+                 </ion-row>
+
+                 <ion-row>
+                    <ion-col>
+                        <button ion-item>
+                            <ion-label>河北</ion-label>
+                            
+                         </button>
+            
+                    </ion-col>
+                    <ion-col>
+                        
+                      </ion-col>
+                      <ion-col>
+                        
+                        </ion-col>
+                 </ion-row>
+
+                 <ion-row>
+                    <ion-col>
+                        <button ion-item>
+                            <ion-label>黑龙江</ion-label>
+                            
+                         </button>
+            
+                    </ion-col>
+                    <ion-col>
+                        
+                      </ion-col>
+                      <ion-col>
+                        
+                        </ion-col>
+                 </ion-row>
+
+
+                 <ion-row>
+                    <ion-col>
+                        <button ion-item>
+                            <ion-label>云南</ion-label>
+                            
+                         </button>
+            
+                    </ion-col>
+                    <ion-col>
+                        
+                      </ion-col>
+                      <ion-col>
+                        
+                        </ion-col>
+                 </ion-row>
+
+
+                 <ion-row>
+                    <ion-col>
+                        <button ion-item>
+                            <ion-label>江苏</ion-label>
+                            
+                         </button>
+            
+                    </ion-col>
+                    <ion-col>
+                        
+                      </ion-col>
+                      <ion-col>
+                        
+                        </ion-col>
+                 </ion-row>
+
+                </ion-grid>
+              
+            </ion-list> 
+           
+                    <!-- infor必须加引号才是一个字符串，要不加就是变量 -->
+                      <ion-list *ngSwitchCase="'dengji'"> 
+                       
+      
+                            <ion-item>
+                                <ion-label>VIP1</ion-label>
+                                <ion-checkbox color=yes checked="true"></ion-checkbox>
+                              </ion-item>
+                      </ion-list>  
+      
+           </div>
+         
+           
+           <ion-list class="gg">
+
+                 <ion-item *ngFor="let i of items">
+                  
+                    <ion-avatar item-start> 
+                      <p style="color:black">资产包转让<span style="color:#999">--FB001</span></p>
+                      <img src="assets/imgs/15.png">
+                      <div class="aini">
+                            <p>地区：<span style="color:black">北京</span></p>
+                            <p>来源：<span style="color:black">银行</span></p>
+                            <p>类型：<span style="color:black">抵押</span></p>
+                      </div>
+                    </ion-avatar>
+            
+                      <div class="aini2">
+                         <span item-end >500万  &nbsp;&nbsp;  300万</span>
+                         <p style="padding-left:5px;" item-end>总金额 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;转让价</p>
+                        
+                       
+                   </div>
+              <img id="img1" item-end src="assets/imgs/16.png">
+                </ion-item>
+              </ion-list>
+
+              <!-- 上拉加载 -->
+                
+               <ion-infinite-scroll (ionInfinite)="doInfinite($event)">
+                  <ion-infinite-scroll-content></ion-infinite-scroll-content>
+                </ion-infinite-scroll>
+
+
+
+
+
+
+
+
+
+        <!-- <ion-fab top left class="img1">
+            <button ion-fab>信息类型<img src="assets/imgs/666.png" >
+          </button>
+            <ion-fab-list>
+              <button ion-fab>资产包转让
+                
+              </button> 
+             <ul class="xiao">
+                  <li>1</li>
+                  <li>2</li>
+                  <li>3</li>
+                </ul>
+              <button ion-fab>债权转让</button>
+              <button ion-fab>固产转让</button>
+              <button ion-fab>法律服务</button>
+              <button ion-fab>商业保理</button>
+              <button ion-fab>典当担保</button>
+              <button ion-fab>融资借贷</button>
+              <button ion-fab>委外催收</button>
+            </ion-fab-list>
+          </ion-fab>
+     <div class="eiei">|</div>
+          <ion-fab top center class="img2">
+            <button ion-fab>地区<img src="assets/imgs/666.png" >
+            </button>
+            <ion-fab-list>
+              <button ion-fab>北京</button>
+              <button ion-fab>上海</button>
+              <button ion-fab>河北</button>
+              <button ion-fab>黑龙江</button>
+              <button ion-fab>云南</button>
+              <button ion-fab>江苏</button>
+              <button ion-fab>海南</button>
+              <button ion-fab>吉林</button>
+            </ion-fab-list>
+          </ion-fab>
+          <div class="eiei2">|</div>
+          <ion-fab top right class="img3">
+            <button ion-fab>更多<img src="assets/imgs/666.png" ></button>
+            <ion-fab-list>
+              <button ion-fab>资产包转让</button>
+              <button ion-fab>债权转让</button>
+              <button ion-fab>固产转让</button>
+              
+            </ion-fab-list>
+          </ion-fab>
+         -->
+            <!-- <button class="img1" ion-button color="wh" >地区<img src="assets/imgs/666.png" ></button>
+            <button class="img2" ion-button color="wh">更多<img src="assets/imgs/666.png" ></button> -->
+      </ion-content>

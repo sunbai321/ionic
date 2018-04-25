@@ -1,0 +1,139 @@
+page-find {
+    .card-title {
+        position: absolute;//滑动时候动。fixed滑动时候不动
+        top: 5%;
+        left:5%;
+        font-size: 22px;;
+        font-weight: bold;
+        color: #fff;
+      }
+      .card-title img{
+       width: 37px; 
+      
+      }
+      .card-title span{
+        position: relative;//滑动时候动。fixed滑动时候不动
+        top: -17px;
+        left: 117px;
+       
+       }
+  
+      .bg{
+        background-image: url('../../assets/imgs/bg2.png');
+        background-repeat:no-repeat;
+        background-position:center;
+        background-position:89%;
+    
+      }
+    
+    
+      .baizi{
+        
+        margin-top: 120px;
+        width: 339px;
+        margin-left: 40px;
+      }
+    
+      .item-ios {
+        background-color:transparent;
+    
+      }
+    
+      button{
+        height:52px;
+        width: 326px;
+       position: relative;
+       left: 52px;
+       top: -15px;
+      }
+    
+      .img1{  
+        max-width: 100%;
+        border: 0;
+        width: 34px;
+        position: relative;
+        left: -151px;
+        top: 56px;
+      }
+    
+      .img2{  
+        
+        width:45px;
+        position: relative;
+        left: -131px;
+        top: -9px;
+      }
+  
+      .img5{  
+        
+        width:35px;
+        position: relative;
+        left: -131px;
+        top: -9px;
+      }
+  
+      .img6{  
+        
+        width:45px;
+        position: relative;
+        left: -135px;
+        top: -3px;
+      }
+    
+      
+        .img3{  
+          position: relative;
+          top: -20px;
+         margin-top: -40px;
+        }
+        .img7{  
+          position: relative;
+          top: -20px;
+          width:220px;
+          margin-top: -40px;
+        }
+    
+      input{
+         font-size: 20px;
+         color: white;
+          }
+     .img4{  
+           color: #cfcfd0;
+           position: relative;
+           left:100px;
+          
+    
+          } 
+  
+    input::-webkit-input-placeholder {
+                     /* placeholder颜色  */
+                    color: #fff;
+                    /* placeholder字体大小  */
+                    font-size: 20px;
+                    /* placeholder位置  */
+                    text-align: left;      
+                  }
+  
+  ion-item{
+     margin-top: -60px;
+      
+    }
+    
+    .yy{
+      width:100px;
+      position: relative;
+      top:-230px;
+      left:270px;
+    }
+    .aa{
+      // margin-top:-35px;
+      margin-left: 35px;
+      color: white;
+    }
+  
+   .bb{
+      margin-left: 70px;
+      margin-top: -20px;
+    }
+
+}

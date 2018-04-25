@@ -1,0 +1,113 @@
+page-contact {
+
+    .ferg{height:80px;}
+
+    .card-title {
+        position: absolute;//滑动时候动。fixed滑动时候不动
+        top: 35%;
+        left:5%;
+        font-size: 22px;;
+        font-weight: bold;
+        color:black;
+      }
+      .card-title img{
+       width: 17px; 
+      
+      }
+      .card-title span{
+        position: relative;//滑动时候动。fixed滑动时候不动
+        top: -8px;
+        left: 150px;
+       
+       }
+       input{
+        width: 354px;
+        height: 43px;
+        border-radius: 31px;
+         border: 0px;
+         padding-left: 20px;
+         margin-bottom: 10px;
+       
+       }
+
+    //    .toolbar-ios-yes .searchbar-ios .searchbar-input {
+    //     color: #000;
+    //     background: white;
+    //     border-radius: 23px;
+    //     margin-bottom: 10px;
+    //    padding-top: 20px;
+    //    }
+.img1{
+  margin-left: 20px;
+     
+}
+
+.img2{
+    margin-left: -40px;
+}
+
+.img3{
+ 
+}
+.xiao{
+    margin-top: -41px;
+    margin-left: 100px;
+    display:none;
+}
+.eiei{
+    margin-left: 156px;
+    margin-top: 27px;
+}
+
+.eiei2{
+    margin-left: 282px;
+    margin-top: -15px;
+}
+
+
+.fab-ios {
+    color: #000;
+    background-color: white;
+}
+.fab {
+    border-radius: 0;  
+    width: 96px; 
+}
+  .kuku{
+      margin-left: -15px;
+   
+  }
+
+
+ .aini{
+     width: 200px;
+   margin-left: 90px;
+   margin-top: -70px;
+  width: 95px;
+  margin-bottom: 20px;
+    
+ }
+ .aini2{
+   padding-top: 20px;
+ 
+   color: red;
+   font-size: 20px;
+ }
+ #img1{
+    width:10px;
+    height:20px;
+
+}
+
+.gg img{
+    width:80px;
+    height:80px;
+    padding-top: 5px;
+ }
+
+ .yuyu .item-block:first-child {
+    border-top: 0.55px solid #c8c7cc;
+    background-color: #f1f1f1;
+    // color:#fedb47;
+}
+}

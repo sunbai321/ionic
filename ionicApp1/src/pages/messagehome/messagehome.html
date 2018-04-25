@@ -1,0 +1,131 @@
+<ion-header no-border >
+    <ion-navbar class="ferg" color='yes'>
+       <ion-title> 
+        <div class="card-title">
+          <img src="assets/imgs/555.png" (click)="tiaozhuan()"><span>信息</span>
+         </div>
+       </ion-title>
+      </ion-navbar>
+  </ion-header>
+
+  <ion-content>
+
+      <ion-list>
+        <ion-item-sliding *ngFor='let item of list' (click)="xiaoxi(item)">
+          
+        <button ion-item>
+          <ion-avatar item-start>
+            <img src="{{item.img}}">
+            </ion-avatar>
+            <h2 *ngFor="let haha of title">sunbai</h2>
+         <h2>{{item.title}}</h2>
+            <p>{{item.p}}</p>
+            
+          <span item-end >{{item.time}}</span>
+          </button>
+       <ion-item-options>
+         <button ion-button color="blue" (click)="goTop(i)">置顶</button>
+         <button ion-button color="light" (click)="del(i)">删除</button>
+       </ion-item-options>
+     </ion-item-sliding>
+      </ion-list> 
+
+
+      <!-- <ion-list>
+
+          <ion-item-sliding>
+
+          <button ion-item (click)="xiaoxi()">
+              <ion-avatar item-start>
+                  <img src="assets/imgs/gg.jpg">
+                  </ion-avatar>
+                  <h2>小鬼</h2>
+                  <p>你在吗</p>
+                  <span item-end >12:13am</span>
+                </button>
+             <ion-item-options>
+               <button ion-button color="blue" (click)="goTop(i)">置顶</button>
+               <button ion-button color="light" (click)="del(i)">删除</button>
+             </ion-item-options>
+           </ion-item-sliding>
+
+
+           <ion-item-sliding>
+            
+              <button ion-item (click)="xiaoxi()">
+                  <ion-avatar item-start>
+                      <img src="assets/imgs/dd.jpg">
+                      </ion-avatar>
+                      <h2>王琳凯</h2>
+                      <p>全民制作人，请多关照</p>
+                      <span item-end >14:13pm</span>
+                    </button>
+                 <ion-item-options>
+                   <button ion-button color="blue" (click)="goTop(i)">置顶</button>
+                   <button ion-button color="light" (click)="del(i)">删除</button>
+                 </ion-item-options>
+               </ion-item-sliding>
+
+
+
+
+           <ion-item-sliding>
+            
+              <button ion-item (click)="xiaoxi()">
+                  <ion-avatar item-start>
+                      <img src="assets/imgs/timg.png">
+                      </ion-avatar>
+                      <h2>AKA</h2>
+                      <p>快乐病毒</p>
+                      <span item-end >21:54pm</span>
+                    </button>
+                 <ion-item-options>
+                   <button ion-button color="blue" (click)="goTop(i)">置顶</button>
+                   <button ion-button color="light" (click)="del(i)">删除</button>
+                 </ion-item-options>
+               </ion-item-sliding>
+
+
+
+
+
+           <ion-item-sliding>
+            
+              <button ion-item (click)="xiaoxi()">
+                  <ion-avatar item-start>
+                      <img src="assets/imgs/小鬼今天发微博了吗">
+                      </ion-avatar>
+                      <h2>Imp</h2>
+                      <p>小鬼今天发微博了吗</p>
+                      <span item-end >10:13am</span>
+                    </button>
+                 <ion-item-options>
+                   <button ion-button color="blue" (click)="goTop(i)">置顶</button>
+                   <button ion-button color="light" (click)="del(i)">删除</button>
+                 </ion-item-options>
+               </ion-item-sliding>
+
+
+
+
+           <ion-item-sliding>
+            
+              <button ion-item (click)="xiaoxi()">
+                  <ion-avatar item-start>
+                      <img src="assets/imgs/touxiang.png">
+                      </ion-avatar>
+                      <h2>鬼姐姐</h2>
+                      <p>未来陪他一起走花路吧</p>
+                      <span item-end >15:13pm</span>
+                    </button>
+                 <ion-item-options>
+                   <button ion-button color="blue" (click)="goTop(i)">置顶</button>
+                   <button ion-button color="light" (click)="del(i)">删除</button>
+                 </ion-item-options>
+               </ion-item-sliding>
+
+      </ion-list> -->
+
+  </ion-content>
+
+

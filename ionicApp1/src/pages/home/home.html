@@ -1,0 +1,246 @@
+<ion-header no-border >
+  <ion-navbar class="ferg" color='yes'>
+    <button ion-button icon-only menuToggle>
+        <ion-icon name='menu'></ion-icon>
+    </button>
+    <ion-title> 
+      
+      <img src="assets/imgs/2.png">
+     <!-- <button ion-button button-end>
+      <ion-icon name='search'></ion-icon>
+     </button>  -->
+     <div class="hehe2"><img src="assets/imgs/3.png"></div>
+  
+
+    </ion-title>
+
+  </ion-navbar>
+</ion-header>
+<ion-content>
+
+  <!-- 下拉刷新 -->
+ <ion-refresher (ionRefresh)="doRefresh($event)">
+    <ion-refresher-content  pullingIcon="arrow-dropdown"
+    pullingText="Pull to refresh"
+    refreshingSpinner="circles"
+    refreshingText="正在刷新....">
+  </ion-refresher-content>
+  </ion-refresher>
+<!-- 滚动组件 -->
+  <!-- <ion-scroll class="fri" scrollX='true'>
+      <span>好友</span>
+      <span>好友</span>
+      <span>好友</span>
+      <span>好友</span>
+      <span>好友</span>
+      <span>好友</span>
+      <span>好友</span>
+      <span>好友</span>
+      <span>好友</span>
+      <span>好友</span>
+      <span>好友</span>
+      <span>好友</span>
+      <span>好友</span>
+      <span>好友</span>
+      <span>好友</span>
+  
+    </ion-scroll> -->
+
+    <!-- <ion-scroll class="fri" scrollY='true' scrollX='true'>
+        <span>好友</span><br>
+        <span>好友</span><br>
+        <span>好友</span><br>
+        <span>好友</span><br>
+        <span>好友</span><br>
+     </ion-scroll> -->
+
+
+<!-- <ion-content padding> -->
+<ion-slides class="one" loop=true autoplay=autoplay>
+  <ion-slide >
+   <img src="assets/imgs/slide1.png">
+  </ion-slide>
+  <!-- <ion-slide>
+    <img src="assets/imgs/slide1.png">
+  </ion-slide> -->
+
+</ion-slides>
+<!-- menuToggle控制点哪菜单出来 -->
+  <!-- <button menuToggle ion-button (click)='go()' class="two">跳转</button> -->
+
+  <!-- 信息头 -->
+  <ion-segment [(ngModel)]="icons" color="yes">
+      <ion-segment-button value="infor" >
+       找信息
+      </ion-segment-button>
+      <ion-segment-button value="service">
+        找服务
+      </ion-segment-button>
+    </ion-segment>
+  
+    <!-- 切换的内容 -->
+    <div [ngSwitch]="icons"> 
+      <!-- infor必须加引号才是一个字符串，要不加就是变量 -->
+        <ion-list *ngSwitchCase="'infor'"> 
+            <ion-slides>
+                <ion-slide>
+            
+                  <ion-grid>
+                <ion-row>
+                  <ion-col (click)="detailmessage()">
+                    <img src="assets/imgs/4.png">
+                    <p>资产包转让</p>
+                  </ion-col>
+                  <ion-col (click)="detailmessage()">
+                    <img src="assets/imgs/5.png">
+                    <p>债权转让</p>
+                  </ion-col>
+                  <ion-col (click)="detailmessage()">
+                    <img src="assets/imgs/6.png">
+                    <p>固产转让</p>
+                  </ion-col>
+                  <ion-col (click)="detailmessage()">
+                    <img src="assets/imgs/7.png">
+                    <p>商业保理</p>
+                  </ion-col>
+                </ion-row>
+                <ion-row>
+                  <ion-col (click)="detailmessage()">
+                    <img src="assets/imgs/8.png">
+                    <p>典当担保</p>
+                  </ion-col>
+                  <ion-col (click)="detailmessage()">
+                    <img src="assets/imgs/9.png">
+                    <p>融资借贷</p>
+                  </ion-col>
+                  <ion-col (click)="detailmessage()">
+                    <img src="assets/imgs/10.png">
+                    <p>悬赏信息</p>
+                  </ion-col>
+                  <ion-col (click)="detailmessage()">
+                    <img src="assets/imgs/11.png">
+                    <p>尽职调查</p>
+                  </ion-col>
+                </ion-row>
+              </ion-grid>
+              <div style="padding-top:0px;"><img src="assets/imgs/left.png"></div>
+            </ion-slide>
+            <ion-slide>
+                <ion-grid>
+                    <ion-row>
+                      <ion-col (click)="detailmessage()">
+                        <img src="assets/imgs/13.png">
+                        <p>资产求购</p>
+                      </ion-col>
+                      <ion-col (click)="detailmessage()">
+                        <img src="assets/imgs/12.png">
+                        <p>委外催收</p>
+                      </ion-col>
+                      <ion-col (click)="detailmessage()">
+                        <img src="assets/imgs/14.png">
+                        <p>法律服务</p>
+                      </ion-col>
+                      <ion-col style=" border:0px ">
+                        
+                      </ion-col>
+                    </ion-row>
+                    
+                  </ion-grid>
+                  <div style="padding-top:133px;"><img src="assets/imgs/right.png"></div>
+            </ion-slide>
+          
+          </ion-slides>
+    </ion-list>
+    <ion-list *ngSwitchCase="'service'"> 
+       
+              <ion-grid>
+            <ion-row>
+              <ion-col (click)='sunbai()'>
+                <img src="assets/imgs/4.png">
+                <p>资产包收购</p>
+              </ion-col>
+              <ion-col (click)='sunbai()'>
+                <img src="assets/imgs/5.png">
+                <p>催收机构</p>
+              </ion-col>
+              <ion-col (click)='sunbai()'>
+                <img src="assets/imgs/6.png">
+                <p>律师事务所</p>
+              </ion-col>
+              <ion-col (click)='sunbai()'>
+                <img src="assets/imgs/7.png">
+                <p>保理公司</p>
+              </ion-col>
+            </ion-row>
+            <ion-row>
+              <ion-col (click)='sunbai()'>
+                <img src="assets/imgs/8.png">
+                <p>资金过桥</p>
+              </ion-col>
+              <ion-col (click)='sunbai()'>
+                <img src="assets/imgs/9.png">
+                <p>投资贷款</p>
+              </ion-col>
+              <ion-col (click)='sunbai()'>
+                <img src="assets/imgs/10.png">
+                <p>固产收购</p>
+              </ion-col>
+              <ion-col (click)='sunbai()'>
+                <img src="assets/imgs/11.png">
+                <p>尽职调查</p>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+        
+    </ion-list>
+   </div>
+
+   <div class="hello"></div>
+
+   <ion-list class="gg">
+
+      <ion-list-header>
+         <img id="hlhl" src="assets/imgs/17.png"><span class="hhhhhh">优质信息</span>  
+      </ion-list-header>
+
+         <ion-item *ngFor="let i of items">
+          
+            <ion-avatar item-start> 
+              <p style="color:black">资产包转让<span style="color:#999">--FB001</span></p>
+              <img src="assets/imgs/15.png">
+              <div class="aini">
+                    <p>地区：<span style="color:black">北京</span></p>
+                    <p>来源：<span style="color:black">银行</span></p>
+                    <p>类型：<span style="color:black">抵押</span></p>
+              </div>
+            </ion-avatar>
+    
+              <div class="aini2">
+                 <span item-end >500万  &nbsp;&nbsp;  300万</span>
+                 <p style="padding-left:5px;" item-end>总金额 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;转让价</p>
+                
+               
+           </div>
+      <img id="img1" item-end src="assets/imgs/16.png">
+        </ion-item>
+     
+<!--     
+<div item-start></div>
+<div item-content></div>
+<div item-end></div> 
+  -->
+
+    </ion-list>
+
+<!-- 上拉加载 -->
+  
+ <ion-infinite-scroll (ionInfinite)="doInfinite($event)">
+    <ion-infinite-scroll-content></ion-infinite-scroll-content>
+  </ion-infinite-scroll>
+ 
+
+
+</ion-content>
+
+
+

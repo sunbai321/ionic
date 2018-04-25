@@ -1,0 +1,85 @@
+page-fabumessage {
+    .ferg{
+        height:80px;
+    }
+    .card-title {
+        position: absolute;//滑动时候动。fixed滑动时候不动
+        top: 35%;
+        left:5%;
+        font-size: 22px;;
+        font-weight: bold;
+        color:black;
+      }
+      .card-title img{
+       width: 17px;     
+      }
+      .card-title span{
+        position: relative;//滑动时候动。fixed滑动时候不动
+        top: -8px;
+        left: 120px;
+       }
+       .content-ios {
+       
+        background-color: #f9f9f9;
+    }
+    ion-content img{
+            width:80px;
+            height:80px;
+    }
+.mm{
+    width: 414px;
+    height:200px;
+    border-left: 0px;
+    border-top: 0px;
+    padding-top:-350px;/*这里的值可以改变光标的位置*/
+}
+
+.mm::-webkit-input-placeholder {
+    /* placeholder颜色  */
+
+   
+   position: relative;   
+  
+   top:-80px;
+   font-size: 18px;
+ }
+
+ .yy{
+     background-color: white;
+     border-bottom: 1px solid #eee;
+ }
+ .yy img{
+width:35px;
+height:40px;
+margin-left: 20px;
+margin-top: 5px;
+padding: 5px;
+ }
+ .div{
+    background-color: white;
+    border-bottom: 1px solid #eee;
+    margin-top: -15px;
+    font-size: 18px;
+}
+
+.div p{
+  padding:10px 10px 0 10px;
+}
+
+.div p span{
+   float: right;
+   color:#ccc;
+  }
+  
+  .red {
+    width: 302px;
+    height: 50px;
+    margin-left: 55px;
+    margin-top:50px;
+    margin-bottom:50px;
+    font-size: 18px;
+    background-color :#fedb47;
+   
+  }
+
+}

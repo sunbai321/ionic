@@ -1,0 +1,47 @@
+<ion-header no-border >
+    <ion-navbar class="ferg" color='yes'>
+      
+      <ion-title> 
+        
+        <div class="card-title">
+          <img src="assets/imgs/555.png" (click)="tiaozhuan()"><span>{{item.title}}</span>
+         
+      </div>
+    
+    
+  
+      </ion-title>
+  
+    </ion-navbar>
+  </ion-header>
+  
+  
+  <ion-content padding>
+<p style="text-align:center;margin-top:-5px;">今天 {{item.time}}</p>
+    <p>
+    <img src="{{item.img}}" class="img">
+    <button class="button1">{{item.p}}</button>
+    </p>
+
+    
+
+    <p>
+    <button class="button2">您好，不良资产是指企业的资产尚未处理清楚</button>
+    <img src="assets/imgs/touxiang.png" class="img2">
+    </p>
+
+
+  </ion-content>  
+
+  <ion-footer>
+    <div style="background-color:white;height:74px;position: relative;top: 20px;">
+   <img src="assets/imgs/yuyin.png" style="float:left;">
+   <ion-list class="baizi"  style="float:left;">
+      <ion-item>
+          <ion-input type="text" placeholder="输入聊天内容"></ion-input>
+      </ion-item>    
+   </ion-list> 
+   <img src="assets/imgs/weixiao.png"  style="float:left;">
+   <img src="assets/imgs/plus.png"  style="float:left;">
+      </div>
+    </ion-footer>

@@ -1,0 +1,73 @@
+page-about {
+    .card-title {
+        position: absolute;//滑动时候动。fixed滑动时候不动
+        top: 5%;
+        left:5%;
+        font-size: 22px;;
+        font-weight: bold;
+        color: #fff;
+        
+       
+      }
+      .card-title img{
+       width: 37px; 
+      
+      }
+      .card-title span{
+        position: relative;//滑动时候动。fixed滑动时候不动
+        top: -17px;
+        left: 117px;
+
+       }
+  
+      .bg{
+        background-image: url('../../assets/imgs/bg2.png');
+        background-repeat:no-repeat;
+        background-position:center;
+        background-position:89%;
+    
+      }
+    
+    
+      .baizi{
+        
+        margin-top: 120px;
+        width: 339px;
+        margin-left: 40px;
+      }
+    
+      .item-ios {
+        background-color:transparent;
+    
+      }
+    
+      input{
+         font-size: 20px;
+         color: white;
+          }
+
+ 
+    .yy{
+      width:100px;
+      position: relative;
+      top:-240px;
+      left:270px;
+    }
+    
+   .bb{
+      margin-left: 70px;
+      margin-top: -20px;
+    }
+
+    .list-ios > .item-block:first-child {
+       border-top: 0px solid #c8c7cc; 
+       
+    }
+
+    .list-ios > .item-block:last-child, .list-ios > .item-wrapper:last-child .item-block {
+      border-bottom: 0px solid #c8c7cc;
+  }
+  .hahah{
+    width:222px;
+  }
+}

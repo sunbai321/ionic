@@ -1,0 +1,66 @@
+page-login {
+    .ferg{height:80px;}
+
+    .card-title {
+        position: absolute;//滑动时候动。fixed滑动时候不动
+        top: 35%;
+        left:5%;
+        font-size: 22px;;
+        font-weight: bold;
+        color:black;
+      }
+      .card-title img{
+       width: 17px; 
+      
+      }
+      .card-title span{
+        position: relative;//滑动时候动。fixed滑动时候不动
+        top: -8px;
+        left: 150px;
+       
+       }
+       .img1{
+           border-radius: 50%;
+           width: 100px;
+           margin:0 auto;
+           margin-top: 10px;
+           margin-left: 95px;
+       }
+       ion-content{
+           text-align:center;
+       }
+
+       .hello{
+        background-color: #f3efef;
+        height:23px;
+    }
+
+    .hello2{
+        background-color: #f3efef;
+       margin-top: -50px;
+        height:23px;
+       
+    }
+    .hello3{
+        background-color: #f3efef;
+        margin-top: -35px;
+        height:35px;
+       
+    }
+  .img2{
+    position: relative;
+    top: -71px;
+    left:50px;
+    width: 79px;
+    height: 30px;
+    font-size: 12px;
+    }
+    h2{
+        margin-top: -15px;
+        margin-left: 10px;
+    }
+    .p1{
+        color:#6e6969;
+    }
+    
+}

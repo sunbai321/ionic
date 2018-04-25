@@ -1,0 +1,75 @@
+page-message {
+
+
+    .ferg{height:80px;}
+
+    .card-title {
+        position: absolute;//滑动时候动。fixed滑动时候不动
+        top: 35%;
+        left:5%;
+        font-size: 22px;;
+        font-weight: bold;
+        color:black;
+      }
+      .card-title img{
+       width: 17px; 
+      
+      }
+      .card-title span{
+        position: relative;//滑动时候动。fixed滑动时候不动
+        top: -8px;
+        left: 120px;
+       
+       }
+
+       .content-ios {
+       
+        background-color: #efebeb;
+    }
+    .baizi{
+        width:200px;
+    }
+
+    
+    ion-footer img{
+        margin-top: 0px;
+        margin: 10px;
+       
+          width: 45px;
+          height:45px;
+    }
+    .list-ios > .item-block:first-child {
+        border-top: 0px solid #c8c7cc;
+    }
+    .img{
+        border-radius: 50px;
+        float:left;
+        width:70px;
+        height:70px;
+    }
+    .img2{
+        border-radius: 50px;
+        float:right;
+        width:70px;
+        height:70px;
+    }
+    .button1{
+        background-color: white;
+        width:200px;
+        height:50px;
+        margin-left: 9px;
+        margin-top:15px;
+        border-radius: 20px;
+        font-size: 18px;
+    }
+    .button2{
+        background-color:#ffcc33;
+        width:200px;
+        height:50px;
+        margin-left: 107px;
+        margin-top:10px;
+        border-radius: 20px;
+        font-size: 18px;
+    }
+
+}

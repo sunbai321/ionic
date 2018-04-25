@@ -1,0 +1,80 @@
+page-detailmessage {
+
+    .ferg{height:80px;}
+
+    .card-title {
+        position: absolute;//滑动时候动。fixed滑动时候不动
+        top: 35%;
+        left:5%;
+        font-size: 22px;;
+        font-weight: bold;
+        color:black;
+      }
+      .card-title img{
+       width: 17px; 
+      
+      }
+      .card-title span{
+        position: relative;//滑动时候动。fixed滑动时候不动
+        top: -8px;
+        left: 120px;
+       
+       }
+
+       .f{
+           border-bottom: 1px solid #eeeeee;
+        }
+
+        .ff{
+            margin-top: 57px;
+            border-bottom: 1px solid #eee;
+         }
+
+        .hello{
+            background-color: #f3efef;
+            height:13px;
+            margin-top: 59px;
+        }
+        .hello2{
+            background-color: #f3efef;
+            height:8px;
+            margin-top: 59px;
+        }
+        .hello3{
+            background-color: #f3efef;
+            height:8px;
+           padding-top: 9px;
+        }
+        .jj{
+            margin-left: 337px;
+           
+            margin-top: -102px;
+           
+        }
+        .img{
+            width:100px;
+            height:80px;
+            padding: 5px;
+        }
+        .img2{
+            width:24px;
+            height:44px;
+            margin-top: -20px
+            ;position: relative;
+            top:-18px;
+        }
+        .hahaha{
+           margin-top: 17px;
+           margin-bottom: -50px;
+           margin-left: 20px;
+        }
+        .xiaogui{
+            width:60px;
+            height:60px;
+            border-radius: 50px;
+            margin-top: -25px;
+            position: relative;
+            top:16px;
+        }
+
+}

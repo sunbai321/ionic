@@ -1,0 +1,30 @@
+page-messagehome {
+    .ferg{
+        height:80px;
+    }
+    .card-title {
+        position: absolute;//滑动时候动。fixed滑动时候不动
+        top: 35%;
+        left:5%;
+        font-size: 22px;;
+        font-weight: bold;
+        color:black;
+      }
+      .card-title img{
+       width: 17px;     
+      }
+      .card-title span{
+        position: relative;//滑动时候动。fixed滑动时候不动
+        top: -8px;
+        left: 120px;
+       }
+       .content-ios {
+       
+        background-color: #f9f9f9;
+    }
+    ion-content img{
+            width:80px;
+            height:80px;
+    }
+
+}

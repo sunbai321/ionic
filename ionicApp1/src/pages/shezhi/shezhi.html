@@ -1,0 +1,49 @@
+
+<ion-header no-border >
+  <ion-navbar class="ferg" color='yes'>
+    <ion-title> 
+      <div class="card-title">
+        <img src="assets/imgs/555.png" (click)="tiaozhuan()"><span>设置</span>
+       
+    </div>
+    </ion-title>
+
+  </ion-navbar>
+</ion-header>
+<ion-content >
+    <ion-list>
+        <button ion-item>
+         图片质量设置
+        </button> 
+        <button ion-item>
+            自动播放视频设置
+           </button> 
+           <button ion-item>
+              消息提醒设置
+             </button> 
+             <ion-item>
+                <ion-label>开启听筒模式</ion-label>
+                <ion-toggle [(ngModel)]="pepperoni"></ion-toggle>
+              </ion-item>
+             <button ion-item>
+                关于资芽
+               </button> 
+              <button ion-item>
+                 资芽公约（免费声明等）
+                 </button> 
+                 <button ion-item>
+                   把资芽推荐给朋友
+                   </button> 
+                   <ion-item>
+                      <ion-label>开启夜间模式</ion-label>
+                      <ion-toggle [(ngModel)]="pepperoni2"></ion-toggle>
+                    </ion-item>
+                   <ion-item>
+                    清除缓存
+                     </ion-item>
+      </ion-list>
+
+      <button class="btn" (click)="exit()">退出登录</button>
+
+     <!-- <button (click)="presentActionSheet()">shahda</button> -->
+  </ion-content>

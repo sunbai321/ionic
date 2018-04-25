@@ -1,0 +1,102 @@
+page-mine {
+  .card-title {
+    position: absolute;//滑动时候动。fixed滑动时候不动
+    top: 5%;
+    left:5%;
+    font-size: 22px;;
+    font-weight: bold;
+    color: #fff;
+  }
+  .card-title img{
+   width: 37px; 
+  
+  }
+  .card-title span{
+    position: relative;//滑动时候动。fixed滑动时候不动
+    top: -17px;
+    left: 131px;
+   
+   }
+
+  .two-card-title img{
+    position: absolute;
+    top: 105px;
+    left: 122px;
+    width: 43%;
+  }
+
+  .two-card-title span{
+    position: absolute;
+    color: #e3e3e3;
+    top: 191px;
+    left: 70px;
+    font-size: 20px;
+   
+  }
+
+  .bg{
+    background-image: url('../../assets/imgs/bg2.png');
+    background-repeat:no-repeat;
+    background-position:center;
+    background-position:89%;
+
+  }
+
+
+  .baizi{
+    margin-top: 229px;
+    width: 55px;
+    width: 275px;
+    margin-left: 99px;
+  }
+
+  .item-ios {
+    background-color:transparent;
+
+  }
+
+  button{
+    height:52px;
+    width: 326px;
+   position: relative;
+   left: 52px;
+   top: -15px;
+  }
+
+  .img1{  
+    max-width: 100%;
+    border: 0;
+    width: 34px;
+    position: relative;
+    left: -151px;
+    top: 56px;
+  }
+
+  .img2{  
+    max-width: 100%;
+    border: 0;
+    width: 30px;
+    position: relative;
+    left: -151px;
+    top: 30px;
+  }
+
+    .img3{  
+      position: relative;
+      top: -20px;
+    }
+
+    input{
+     font-size: 20px;
+     line-height: 0px;
+     color:white;
+      }
+      .img4{  
+       color: #cfcfd0;
+       position: relative;
+       left:175px;
+       font-size: 18px;
+
+      } 
+
+}
